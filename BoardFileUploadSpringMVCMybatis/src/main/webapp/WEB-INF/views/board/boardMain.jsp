@@ -478,39 +478,70 @@
     	}
     	
     	function makeDetailHtml( detail ){
-			let boardId = detail.boardId;
-			let userName = detail.userName;
-			let title = detail.title;
-			let content = detail.content;
-			let regDt = detail.regDt;
-			let regDtStr = 
-				makeDateStr( regDt.date.year, regDt.date.month, regDt.date.day, '/') + ' ' +
-				makeTimeStr( regDt.time.hour, regDt.time.minute, regDt.time.second, ':');
-			let readCount = detail.readCount;
-			let sameUser = detail.sameUser;
+            let boardId = detail.boardId;
+            let userName = detail.userName;
+            let title = detail.title;
+            let content = detail.content;
+            let regDt = detail.regDt;
+            let regDtStr = 
+                makeDateStr( regDt.date.year, regDt.date.month, regDt.date.day, '/') + ' ' +
+                makeTimeStr( regDt.time.hour, regDt.time.minute, regDt.time.second, ':');
+            let readCount = detail.readCount;
+            let sameUser = detail.sameUser;
 
-			document.querySelector("#boardDetailModal").setAttribute("data-boardId", boardId );
-    		document.querySelector("#boardIdDetail").innerHTML = boardId;
-    		document.querySelector("#titleDetail").innerHTML = title;
-    		document.querySelector("#contentDetail").innerHTML = content;
-    		document.querySelector("#userNameDetail").innerHTML = userName;
-    		document.querySelector("#regDtDetail").innerHTML = regDtStr;
-    		document.querySelector("#readCountDetail").innerHTML = readCount;
-    		
-    		if( sameUser ){
-    			document.querySelector("#btnBoardUpdateForm").style.display = "inline-block";
-    			document.querySelector("#btnBoardDeleteConfirm").style.display = "inline-block";
-    		}else{
-    			document.querySelector("#btnBoardUpdateForm").style.display = "none";
-    			document.querySelector("#btnBoardDeleteConfirm").style.display = "none";
-    		}
-    		
-    		let modal = new bootstrap.Modal(
-					document.querySelector("#boardDetailModal")
-			);
-			
-			modal.show();
-    	}
+            // 첨부파일
+            let fileList = detail.fileList;
+            
+            // 화면 구성
+            document.querySelector("#boardDetailModal").setAttribute("data-boardId", boardId );
+            document.querySelector("#boardIdDetail").innerHTML = boardId;
+            document.querySelector("#titleDetail").innerHTML = title;
+            document.querySelector("#contentDetail").innerHTML = content;
+            document.querySelector("#userNameDetail").innerHTML = userName;
+            document.querySelector("#regDtDetail").innerHTML = regDtStr;
+            document.querySelector("#readCountDetail").innerHTML = readCount;
+            
+            // 첨부파일 화면 구성
+            let fileListDetailHtml = ``;
+            if( fileList.length > 0 ){ // 첨부 파일이 있으면
+                
+                fileList.forEach( el => {
+                    let fileId = el.fileId;
+                    let fileName = el.fileName;
+                    let fileUrl = el.fileUrl;
+                    
+                    fileListDetailHtml += 
+                        `
+                        <div>
+                            <span clas="fileName">${fileName}</span>
+                            &nbsp;&nbsp;
+                            <a  type="button" 
+                                class="btn btn-outline btn-default btn-xs" 
+                                data-fileId="${fileId}"
+                                href="${fileUrl}"
+                                download="${fileName}"
+                            >내려받기</a>
+                        </div>
+                        `
+                } );
+            }
+            
+            document.querySelector("#fileListDetail").innerHTML = fileListDetailHtml;
+            
+            if( sameUser ){
+                document.querySelector("#btnBoardUpdateForm").style.display = "inline-block";
+                document.querySelector("#btnBoardDeleteConfirm").style.display = "inline-block";
+            }else{
+                document.querySelector("#btnBoardUpdateForm").style.display = "none";
+                document.querySelector("#btnBoardDeleteConfirm").style.display = "none";
+            }
+            
+            let modal = new bootstrap.Modal(
+                    document.querySelector("#boardDetailModal")
+            );
+            
+            modal.show();
+        }
     	
     	///////////////////////////////////
         function validateInsert(){

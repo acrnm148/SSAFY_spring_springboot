@@ -5,6 +5,7 @@ import javax.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
@@ -28,7 +29,11 @@ public class BoardController {
 	private final int SUCCESS = 1;
 	
 	@GetMapping(value="/boards")
-	private ResponseEntity<BoardResultDto> boardList(BoardParamDto boardParamDto) {
+	private ResponseEntity<BoardResultDto> boardList(BoardParamDto boardParamDto, Model model, HttpSession session) {
+		UserDto userDto = (UserDto) session.getAttribute("userDto");
+		System.out.println(userDto.getUserProfileImageUrl());
+		model.addAttribute("data", userDto.getUserProfileImageUrl());
+		
 		BoardResultDto boardResultDto;
 
 		// service 호출할 때, searchWord 유무에 따라 분리해서 처리
