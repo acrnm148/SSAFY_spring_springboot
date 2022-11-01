@@ -1,0 +1,6 @@
+package com.mycom.basic;
+
+@Controller
+public class BasicController {
+
+}

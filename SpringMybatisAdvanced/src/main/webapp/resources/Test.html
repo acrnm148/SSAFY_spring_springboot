@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>Test</h1>
+	<button id="btnException"> Controller 예외 발생 async 요청 </button>
+	
+	<button id="btnStudentInsert"> 학생 등록 </button>
+
+	<script>
+		window.onload = function() {
+			
+			document.querySelector("#btnException").onclick = async function() {
+				
+				try {
+					let response = await fetch("/myadv/exception");
+					let data = await response.json();
+					
+					if (data.result == "ajax_exception") {
+						alert("서버에 문제가 있습니다.");
+					}
+					
+					console.log( data );
+				} catch (error) {
+					console.error(error);
+				}
+				
+			}
+			
+			var student = {
+					studentNm:'강수나',
+					email:'acrnm148@gmail.com',
+					phone:'010-1111-1111',
+			}
+			document.querySelector("#btnStudentInsert").onclick = async function() {
+				
+				let fetchOptions = {
+						method: 'POST',
+						headers: {
+							'Content-Type' : 'application/json'
+						},
+						body: JSON.stringify({
+							studentNm : '강순아',
+							email: 'kang@sun.com',
+							phone: '010-1234-1234'
+						})
+				}
+				try {
+					let response = await fetch("/myadv/insert", fetchOptions);
+					let data = await response.json();
+					
+					if (data.result == "ajax_exception") {
+						alert("서버에 문제가 있습니다.");
+					}
+					
+					console.log(data);
+				} catch(error) {
+					console.error(error);
+				}
+			}
+			
+		}
+	</script>
+</body>
+</html>

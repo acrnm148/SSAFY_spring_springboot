@@ -1,0 +1,21 @@
+package com.mycom.more.config;
+
+import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.context.annotation.Configuration;
+import org.springframework.web.servlet.config.annotation.WebMvcConfigurer;
+
+import com.mycom.more.common.TestInterceptor;
+
+@Configuration //xml 설정을 대신 <- servlet-context.xml 의 설정 내용을 대체, interceptor 외에 다른 많은 설정 가능
+public class WebMvcConfig implements WebMvcConfigurer{
+	// interceptor 대한 정책
+	// interceptor 객체 DI
+	
+	@Autowired
+	private TestInterceptor testInterceptor;
+	
+	
+}
+
+// interface는 추상메소드만으로 구성, 바니를 가지는 default 메소드를 가질 수 없었음
+//

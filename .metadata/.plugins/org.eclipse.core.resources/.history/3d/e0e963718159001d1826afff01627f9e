@@ -1,0 +1,6 @@
+package com.mycom.more.config;
+
+@Configuration
+public class WebMvcConfig {
+
+}

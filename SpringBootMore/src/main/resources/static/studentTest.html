@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Student Test</title>
+</head>
+<body>
+	<h4>학생 관리</h4>
+	<hr>
+	<table>
+		<thead>
+			<tr><td>StudentId</td><td>StudentNm</td><td>email</td><td>phone</td></tr>
+		</thead>
+		<tbody id="tbodyStudent"></tbody>
+	</table>
+	<hr>
+	<form>
+		<table>
+			<tbody>
+				<tr><td>StudentNm</td><td><input type="text" name="studentNm" id="inputStudentNm"></td></tr>
+				<tr><td>Email</td><td><input type="text" name="email" id="inputEmail"></td></tr>
+				<tr><td>Phone</td><td><input type="text" name="phone" id="inputPhone"></td></tr>
+			</tbody>
+		</table>
+	</form>
+	<div style="border: 1px; margin: auto; text-align: center">
+		<button id="btnInsert">등록</button>
+		<button id="btnUpdate">수정</button>
+		<button id="btnDelete">삭제</button>
+		<button id="btnClear">초기화</button>
+	</div>
+	
+	<script>
+		var CURRENT_ID;
+		
+		window.onload = function(){
+			
+			listStudent();
+			
+			// 이벤트 핸들러 등록
+			document.querySelector("#btnInsert").onclick = insertStudent;
+			document.querySelector("#btnUpdate").onclick = updateStudent;			
+			document.querySelector("#btnDelete").onclick = deleteStudent;
+			document.querySelector("#btnClear").onclick = clear;
+		}
+	
+		async function listStudent(){
+			// 목록
+			// get /students
+			try{
+				let response = await fetch('/students');
+				let data = await response.json();
+				makeListHtml( data );
+			}catch(error){
+				console.log(error)
+			}
+		}
+		
+		function makeListHtml(list){
+			let listHtml = ``;
+			list.forEach( el => {
+				let studentId = el.studentId;
+				let studentNm = el.studentNm;
+				let email = el.email;
+				let phone = el.phone;
+				
+				listHtml += `<tr style="cursor: pointer;" data-studentId=${studentId}><td>${studentId}</td><td>${studentNm}</td><td>${email}</td><td>${phone}</td></tr>`;
+			});
+			
+			document.querySelector("#tbodyStudent").innerHTML = listHtml;
+			
+			makeListHtmlEventHandler();
+		}
+		
+		function makeListHtmlEventHandler(){
+			document.querySelectorAll("#tbodyStudent tr").forEach( el => {
+				el.onclick = function(){
+					let studentId = this.getAttribute("data-studentId");
+					detailStudent(studentId);
+				}
+			});
+		}
+		
+		async function detailStudent(studentId){
+			// 상세
+			// get /students/123			
+			let url = '/students/' + studentId;
+			
+			try{
+				let response = await fetch(url);
+				let data = await response.json();
+				makeDetailHtml( data );
+			}catch(error){
+				console.log(error)
+			}
+		}
+		
+		function makeDetailHtml(detail){
+			console.log(detail);
+			
+			CURRENT_ID = detail.studentId;
+			
+			document.querySelector("#inputStudentNm").value = detail.studentNm;
+			document.querySelector("#inputEmail").value = detail.email;
+			document.querySelector("#inputPhone").value = detail.phone;
+			
+		}
+		
+		async function insertStudent(){
+			// fetch + rest api
+			// /students POST
+			let student = {
+				studentNm : document.querySelector("#inputStudentNm").value,
+				email : document.querySelector("#inputEmail").value,
+				phone : document.querySelector("#inputPhone").value
+			}
+
+			let urlParams = new URLSearchParams(student);
+			let fetchOptions = {
+				method : "POST",
+				body : urlParams
+			}
+			
+			try{
+				let response = await fetch('/students', fetchOptions)
+				let data = await response.json();
+				console.log(data);
+				listStudent();
+				clear();
+			}catch(error){
+				console.log(error)
+			}
+		}
+		// Spring MVC 와 비교해서 PUT 을 URLSearchParams 를 이용해서 보낼 수 있다.
+		async function updateStudent(){
+			// fetch + rest api
+			// /students PUT
+			let url = '/students/' + CURRENT_ID;
+			
+			let student = {
+				studentId : CURRENT_ID,
+				studentNm : document.querySelector("#inputStudentNm").value,
+				email : document.querySelector("#inputEmail").value,
+				phone : document.querySelector("#inputPhone").value
+			}
+
+			let urlParams = new URLSearchParams(student);
+			let fetchOptions = {
+				method : "PUT",
+				body : urlParams
+			}
+			
+			try{
+				let response = await fetch(url, fetchOptions)
+				let data = await response.json();
+				console.log(data);
+				listStudent();
+				clear();
+			}catch(error){
+				console.log(error)
+			}
+		}
+		
+		async function deleteStudent(){
+			let url = '/students/' + CURRENT_ID;
+
+			let fetchOptions = {
+				method : "DELETE",
+			}
+			// fetch + rest api
+			// /students DELETE
+			try{
+				let response = await fetch(url, fetchOptions)
+				let data = await response.json();
+				console.log(data);
+				listStudent();
+				clear();
+			}catch(error){
+				console.log(error)
+			}
+		}
+		
+		function clear(){
+			document.querySelector("#inputStudentNm").value = "";
+			document.querySelector("#inputEmail").value = "";
+			document.querySelector("#inputPhone").value = "";
+		}
+		
+	</script>	
+</body>
+</html>

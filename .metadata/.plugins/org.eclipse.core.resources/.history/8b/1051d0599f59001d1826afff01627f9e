@@ -1,0 +1,22 @@
+package com.mycom.more;
+
+import static org.junit.jupiter.api.Assertions.*;
+import org.springframework.beans.factory.annotation.Autowired;
+import com.mycom.more.service.StudentService;
+
+@SpringBootTest 
+public class SpringBootMoreApplicationTest {
+
+	@Autowired
+	StudentService service;
+	
+	// test method를 생성해서 테스트를 진행하려고 하는데, StudentService객체 <= DI
+	// StudentService 객체가 DI가 잘 되는지 테스트
+	// StudentService를 이용해서 신규로 등록 1건 테스트
+	
+	@Test
+	void testService() {
+		assertNotNull(service);
+	}
+
+}

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.mycom.mybatis.dao.MybatisDao">
+    
+    <select id="empDetail" parameterType="int" resultType="com.mycom.mybatis.dto.EmpDto">
+        select employeeId, first_name, last_name, email, hiredate
+            from emp where employeeId = #{employeeId} 
+    </select>
+    
+    <!-- dto List등 목록을 리턴하는 경우는 상세를 리턴하는 것과 동일하게 dto 타입을 사용-->
+    <select id="empList" resultType="com.mycom.mybatis.dto.EmpDto">
+        select employeeId, first_name firstName, last_name lastName, email, hiredate
+            from emp
+    </select>
+    
+    <insert id="empInsert" parameterType="com.mycom.mybatis.dto.EmpDto">
+        insert into emp ( employeeId, first_name, last_name, email, hiredate )
+            values ( #{employeeId}, #{firstName}, #{lastName}, #{email}, now() )
+    </insert>
+    
+    <update id="empUpdate" parameterType="com.mycom.mybatis.dto.EmpDto">
+        update emp
+            set first_name = #{firstName}
+                , last_name = #{lastName}
+                , email = #{email}
+                , hiredate = #{hireDate} <!-- hireDate의 D는 대문자 -->
+            where employeeId = #{employeeId}
+    </update>
+    
+    <select id="empListParameterMap" parameterType="map" resultType="com.mycom.mybatis.dto.EmpDto">
+        select employeeId, first_name firstName, last_name lastName, email, hiredate
+            from emp
+            where first_name = #{firstName}
+                and last_name = #{lastName}
+    </select>
+    
+    <select id="empListParameterMap2" parameterType="map" resultType="com.mycom.mybatis.dto.EmpDto">
+        select employeeId, first_name firstName, last_name lastName, email, hiredate
+            from emp
+            where first_name = #{firstName}
+                and last_name = #{lastName}
+    </select>
+    
+<!--     <select id="empListParameterMap3" parameterType="map" resultType="com.mycom.mybatis.dto.EmpDto"> -->
+<!--         select employeeId, first_name firstName, last_name lastName, email, hiredate -->
+<!--             from emp -->
+<!--             where first_name = #{firstName} -->
+<!--                 and last_name = #{lastName} -->
+<!--     </select> -->
+
+
+    <select id="empListParameterMap3" parameterType="map" resultMap="empMap">
+        select employeeId, first_name firstName, last_name lastName, email, hiredate
+            from emp
+            where first_name = #{firstName}
+                and last_name = #{lastName}
+    </select>
+    
+    <!-- resultMap는 dto 필드에 db 컬럼을 넣어주는 역할 => 있어도 되고 없어도 된다 -->
+    <!-- property는 Dto꺼, column은 DB꺼  -->
+    <resultMap id="empMap" type="com.mycom.mybatis.dto.EmpDto">
+    	<result property="employeeId" column="employeeId"/>
+    	<result property="firstName" column="first_name"/>
+		<result property="lastName" column="last_name"/>
+		<result property="email" column="email"/>
+		<result property="hireDate" column="hiredate"/>
+    </resultMap>
+    
+    <select id="empListLike" parameterType="string" resultMap="empMap">
+        select employeeId, first_name firstName, last_name lastName, email, hiredate
+            from emp
+            where first_name like concat('%', #{firstName},'%')
+    </select>
+</mapper>

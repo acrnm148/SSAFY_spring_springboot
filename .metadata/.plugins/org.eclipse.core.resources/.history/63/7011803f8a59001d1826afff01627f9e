@@ -1,0 +1,10 @@
+package com.mycom.more.controller;
+
+import org.springframework.web.bind.annotation.RestController;
+
+@RestController
+public class CORSTestController {
+
+	@GetMapping("/getcors")
+	public ResponseEntity<Map<String, String>> getCORS(String param)
+}

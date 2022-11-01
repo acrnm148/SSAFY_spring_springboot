@@ -1,0 +1,12 @@
+package com.mycom.more.config;
+
+import org.springframework.context.annotation.Configuration;
+
+@Configuration //xml 설정을 대신 <- servlet-context.xml 의 설정 내용을 대체, interceptor 외에 다른 많은 설정 가능
+public class WebMvcConfig {
+	// interceptor 대한 정책
+	// interceptor 객체 DI
+	
+	@Autowired
+	
+}

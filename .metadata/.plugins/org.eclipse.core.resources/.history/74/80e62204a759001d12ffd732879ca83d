@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<div>
+		<button id="btnBoard" class="btn btn-info">게시판</button>
+		<button id="btnLogin" class="btn btn-primaray">Login</button>
+		<button id="btnBoard" class="btn btn-success">회원가입</button>
+	</div>
+</body>
+</html>

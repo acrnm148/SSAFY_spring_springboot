@@ -1,0 +1,5 @@
+package com.mycom.more.controller;
+
+public class CORSTestController {
+
+}

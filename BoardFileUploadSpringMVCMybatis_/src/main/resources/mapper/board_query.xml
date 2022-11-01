@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.mycom.myboard.dao.BoardDao">
+	<!-- limit, offset -->
+	<select id="boardList" parameterType="map" resultType="com.mycom.myboard.dto.BoardDto">
+		select b.board_id, b.user_seq, u.user_name, u.user_profile_image_url, b.title, b.content, b.reg_dt, b.read_count
+            from BOARD b, USERS u
+            where b.user_seq = u.user_seq
+            order by b.board_id desc
+            limit #{limit} offset #{offset}
+	</select>
+	<select id="boardListTotalCount" resultType="int">
+		select count(*) from board
+	</select>
+	
+	<!-- searchWord -->
+	<select id="boardListSearchWord" parameterType="map" resultType="com.mycom.myboard.dto.BoardDto">
+		select b.board_id, b.user_seq, u.user_name, u.user_profile_image_url, b.title, b.content, b.reg_dt, b.read_count
+            from BOARD b, USERS u
+            where b.user_seq = u.user_seq
+            and b.title like concat('%', #{searchWord},'%')
+            order by b.board_id desc
+            limit #{limit} offset #{offset}
+	</select>
+	<select id="boardListSearchWordTotalCount" parameterType="string" resultType="int">
+		select count(*) from board 
+			where title like concat('%', #{searchWord},'%')
+	</select>
+</mapper>

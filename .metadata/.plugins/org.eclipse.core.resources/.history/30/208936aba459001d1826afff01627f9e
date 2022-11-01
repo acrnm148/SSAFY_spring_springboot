@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="com.mycom.more.dao.StudentDao"> <!-- @Mapper annotation 있는 dao -->
+
+	<select id="detail" parameterType="int" resultType="com.mycom.more.dto.StudentDto">
+		select student_id, student_nm, email, phone
+		  from student
+		 where student_id = #{studentId} 
+	</select>
+	
+	<!-- dto List 등 목록을 리턴하는 경우는 상세를 리턴하는 것과 동일하게 dto 타입을 사용 -->
+	<select id="list" resultType="com.mycom.more.dto.StudentDto">
+		select student_id, student_nm, email, phone
+		  from student
+	</select>
+	
+	<insert id="insert" parameterType="com.mycom.more.dto.StudentDto">
+		insert into student ( student_nm, email, phone )
+		 values ( #{studentNm}, #{email}, #{phone})
+	</insert>
+	
+	<update id="update" parameterType="com.mycom.more.dto.StudentDto">
+		update student
+		   set student_nm = #{studentNm}
+		      ,email = #{email}
+		      ,phone = #{phone}
+		 where student_id = #{studentId}
+	</update>
+	
+	<delete id="delete" parameterType="int">
+		delete from student where student_id = #{studentId}
+	</delete>
+
+	
+</mapper>
+
+
+
+

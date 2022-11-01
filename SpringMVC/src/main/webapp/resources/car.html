@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+	<h1>send JSON (FE => BE) </h1>
+	<button id="sendDto">Dto 보내기</button>
+	<button id="sendDtoList">Dto 보내기</button>
+	<script>
+		var Dto={
+				name:'치킨',
+				price:'18000',
+				ownerName:'강수나'
+		}
+		
+		window.onload= function() {
+			document.querySelector("#sendDto").onclick= async function() {
+				let fetchOptions={
+						method:'POST',
+						headers: {
+							'Content-type':'application/json'
+						},
+						body: JSON.stringify(Dto) // 문자열 to JSON
+				};
+				
+				try {
+					let response=await fetch('/myapp/car', fetchOptions);
+				} catch(error) {
+					console.error(error);
+				}
+			}
+			
+		}
+	</script>
+</body>
+</html>

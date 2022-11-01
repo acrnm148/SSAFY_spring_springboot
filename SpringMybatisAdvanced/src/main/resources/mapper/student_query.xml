@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+
+<mapper namespace="com.mycom.myadv.dao.MybatisDao">
+
+<insert id="studentInsert" parameterType="com.mycom.myadv.dto.StudentDto">
+	insert student ( student_nm, email, phone) 
+		values( #{studentNm}, #{email}, #{phone});
+</insert>
+
+</mapper>
