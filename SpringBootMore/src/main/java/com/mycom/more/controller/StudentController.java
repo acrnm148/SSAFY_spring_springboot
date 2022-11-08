@@ -3,15 +3,29 @@ package com.mycom.more.controller;
 import java.util.List;
 
 import org.springframework.beans.factory.annotation.Autowired;
+import org.springframework.web.bind.annotation.CrossOrigin;
 import org.springframework.web.bind.annotation.DeleteMapping;
 import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.PutMapping;
+import org.springframework.web.bind.annotation.RequestMethod;
 import org.springframework.web.bind.annotation.RestController;
 
 import com.mycom.more.dto.StudentDto;
 import com.mycom.more.service.StudentService;
+
+@CrossOrigin(
+		origins="http://127.0.0.1:5501", //여기서 CORS 오류날 VSCode 포트번호 지정해줌
+		//origins="*",
+		allowCredentials="true",
+		//sessionid를 기존처럼 고정 => server session 계속 사용
+		allowedHeaders="*",
+		methods= {
+					RequestMethod.GET, RequestMethod.POST, RequestMethod.PUT, RequestMethod.DELETE,
+					RequestMethod.OPTIONS, RequestMethod.HEAD 
+				}
+)
 
 @RestController
 public class StudentController {

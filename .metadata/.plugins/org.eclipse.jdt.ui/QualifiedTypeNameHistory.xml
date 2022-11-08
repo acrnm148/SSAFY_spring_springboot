@@ -5,4 +5,5 @@
 <fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMethod"/>
 <fullyQualifiedTypeName name="com.mycom.more.dto.StudentDto"/>
 <fullyQualifiedTypeName name="lombok.Value"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Value"/>
 </qualifiedTypeNameHistroy>

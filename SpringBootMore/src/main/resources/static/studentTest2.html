@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>Student Test</title>
+</head>
+
+<body>
+	<div id="app">
+		<h4>학생 관리</h4>
+		<hr>
+		<table>
+			<thead>
+				<tr>
+					<td>StudentId</td>
+					<td>StudentNm</td>
+					<td>email</td>
+					<td>phone</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr v-for="(row, index) in studentList" :key="index">
+					<td>{{row.studentId}}</td>
+					<td>{{row.studentNm}}</td>
+					<td>{{row.email}}</td>
+					<td>{{row.phone}}</td>
+				</tr>
+			</tbody>
+		</table>
+		<hr>
+		<form>
+			<table>
+				<tbody>
+					<tr>
+						<td>StudentNm</td>
+						<td><input type="text" name="studentNm" id="inputStudentNm"></td>
+					</tr>
+					<tr>
+						<td>Email</td>
+						<td><input type="text" name="email" id="inputEmail"></td>
+					</tr>
+					<tr>
+						<td>Phone</td>
+						<td><input type="text" name="phone" id="inputPhone"></td>
+					</tr>
+				</tbody>
+			</table>
+		</form>
+		<div style="border: 1px; margin: auto; text-align: center">
+			<button id="btnInsert">등록</button>
+			<button id="btnUpdate">수정</button>
+			<button id="btnDelete">삭제</button>
+			<button id="btnClear">초기화</button>
+		</div>
+	</div>
+	<script>
+		// #1. 서버와의 통신 url
+		//fetch('/students'); => 같은 서버에서 html을 다운로드 한 경우
+		// fetch('http://localhost:8080/students') <= Postman에서 실행하는 형태로 url
+
+		//#2. 언제 서버와의 통신
+		// life-cycle method
+		// create / mount / update / ==> 최초 back-end 요청 데이터는 created 안에서.
+
+		//#3. Dynamic Rendering 참고
+		new Vue({
+			el: '#app',
+			date() {
+				return {
+					studentList: [
+						
+					]
+				}
+			},
+			methods: {
+				async listStudent() {
+					//fetch
+					// get /students
+					try {
+						let response = await fetch('http://localhost:8080/students');
+						let data = await response.json(); //data == student객체의 배열
+						makeListHtml(data);
+					} catch (error) {
+						console.log(error)
+					}
+				}
+			},
+			created() {
+				this.studentList = this.listStudent();
+			}
+		});
+	</script>
+</body>
+
+</html>

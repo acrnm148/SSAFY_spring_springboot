@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+	<!-- vue.js 사용 -->
+	<script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	<script src="https://unpkg.com/axios/dist/axios.min.js"></script>
+</head>
+<body>
+	<!-- vue / studentTest.html <== vscode에서 live server로 실행할 때는 localhost:8080 이 필요, (CORS 오류 때문)
+		 sts에서 localhost:8080 으로 실행할 때는 제외하고 테스트 가능 -->
+	<div id="app">
+		<h4>학생 관리</h4>
+		<hr>
+		<table>
+			<thead>
+				<tr>
+					<td>학생아이디</td>
+					<td>학생명</td>
+					<td>이메일</td>
+					<td>연락처</td>
+				</tr>
+			</thead>
+			<tbody>
+				<tr v-for="(row, index) in studentList" :key="index" @click="detailStudent(row.studentId)" style="cursor:pointer;">
+					<td>{{row.studentId}}</td>
+					<td>{{row.studentNm}}</td>
+					<td>{{row.email}}</td>
+					<td>{{row.phone}}</td>
+				</tr>
+			</tbody>
+
+		</table>
+		<hr>
+		<form>
+			<table>
+				<tbody>
+					<tr>
+						<td>학생명</td>
+						<td><input type="text" v-model="student.studentNm" name="studentNm"></td>
+					</tr>
+					<tr>
+						<td>이메일</td>
+						<td><input type="text" v-model="student.email" name="email"></td>
+					</tr>
+					<tr>
+						<td>연락처</td>
+						<td><input type="text" v-model="student.phone" name="phone"></td>
+					</tr>
+				</tbody>
+			</table>
+		</form>
+		<div>
+			<button @click="insertStudent">등록</button>
+			<button @click="updateStudent">수정</button>
+			<button @click="deleteStudent">삭제</button>
+			<button @click="clear">초기화</button>
+		</div>
+	</div>
+
+	<script>
+		/*
+		*   axios : json으로 바로 보내고 json으로 바로 받는다
+		*/
+		
+		new Vue({
+			el: '#app',
+			data() {
+				return {
+					studentList: [],
+					student: {}
+				}
+			},
+			methods: {
+				async listStudent() { //목록
+					try{
+						let {data} = await axios.get('http://localhost:8080/vue/students');
+						this.studentList = data;
+
+					} catch(error) {
+						console.log(error);
+					}
+				},
+				async insertStudent() { //등록
+					// !! x-www-form-urlencoded방식이므로 enc-type : post default <- fetch
+					
+					//axios는 post, put 등을 json으로 전송 raw-json <= backend @RequestBody
+					// 전송 시에 javascript object -> json 으로 변경하는건 axios가 자동으로 처리
+					// 대신 우리는 json이 아닌 javascript object를 파라미터로 전달 -> this.student
+					try{
+						let {data} = await axios.post('http://localhost:8080/vue/students', this.student);
+						this.listStudent();
+						this.clear();
+					} catch(error) {
+						console.log(error)
+					}
+				},
+				async updateStudent() { //수정
+					
+					try{
+						let {data} = await axios.put('http://localhost:8080/vue/students/'+this.student.studentId, this.student);
+						this.listStudent();
+						this.clear();
+					} catch(error) {
+						console.log(error)
+					}
+				},
+				async deleteStudent() { //삭제
+					let fetchOptions = {
+						method: 'DELETE'
+					}
+					try{
+						let {data} = await axios.delete("http://localhost:8080/vue/students/"+this.student.studentId);
+						this.listStudent();
+						this.clear();
+					} catch(error) {
+						console.log(error);
+					}
+				},
+				async detailStudent(studentId) {
+					try{
+						let {data} = await axios.get("http://localhost:8080/vue/students/"+ studentId);
+						this.student = data;
+					} catch(error) {
+						console.log(error);
+					}
+				},
+				clear() {
+					this.student.studentId =0;
+					this.student.studentNm ='';
+					this.student.email ='';
+					this.student.phone ='';
+				}
+			},
+			created() {
+				this.listStudent();
+			}
+		});
+
+	</script>
+</body>
+</html>
