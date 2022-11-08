@@ -8,6 +8,7 @@ import javax.servlet.http.HttpSession;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpStatus;
 import org.springframework.http.ResponseEntity;
+import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.PostMapping;
 import org.springframework.web.bind.annotation.RestController;
 
@@ -44,4 +45,15 @@ public class LoginController {
 		map.put("result", "fail");
 		return new ResponseEntity<Map<String, String>>(map, HttpStatus.NOT_FOUND);
 	}
+	
+	@GetMapping("/userImg")
+    public ResponseEntity<Map<String, String>> profile(HttpSession session) {
+        String url = ((UserDto) session.getAttribute("userDto")).getUserProfileImageUrl();
+        System.out.println(url);
+        Map<String, String> map = new HashMap<>();
+        map.put("result", url);
+        
+        return new ResponseEntity<Map<String, String>>(map, HttpStatus.OK);
+    }
+	
 }

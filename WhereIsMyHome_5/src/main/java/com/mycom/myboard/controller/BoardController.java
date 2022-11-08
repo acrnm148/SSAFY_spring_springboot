@@ -33,6 +33,7 @@ public class BoardController {
 		UserDto userDto = (UserDto) session.getAttribute("userDto");
 		System.out.println(userDto.getUserProfileImageUrl());
 		model.addAttribute("data", userDto.getUserProfileImageUrl());
+		session.setAttribute("prof", userDto.getUserProfileImageUrl());
 		
 		BoardResultDto boardResultDto;
 
