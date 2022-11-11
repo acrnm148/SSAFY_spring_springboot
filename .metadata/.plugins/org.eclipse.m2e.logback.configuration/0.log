@@ -1790,3 +1790,212 @@ Caused by: org.eclipse.core.runtime.CoreException: One or more constraints have 
 2022-11-08 16:25:30,587 [Worker-176: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Changed resources require a complete clean of filtered resources of springDBMybatis
 2022-11-08 16:25:30,587 [Worker-176: Building] INFO  o.e.m.w.i.f.ResourceFilteringBuildParticipant - Executing resource filtering for springDBMybatis
 2022-11-08 16:25:30,591 [Worker-176: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-11-09 08:39:35,311 [Worker-5: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-11-10 09:02:01,352 [Worker-0: Loading available Gradle versions] INFO  o.e.b.c.i.u.g.PublishedGradleVersions - Gradle version information cache is up-to-date. Trying to read.
+2022-11-10 11:18:32,148 [Worker-46: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-11-10 11:18:32,153 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2022-11-10 11:18:32,159 [Worker-46: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-11-10 11:18:32,160 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-11-10 11:18:32,745 [Worker-46: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-11-10 11:18:32,746 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2022-11-10 11:18:32,748 [Worker-46: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-11-10 11:18:32,749 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-11-10 11:18:35,014 [Worker-46: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-11-10 11:18:35,015 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2022-11-10 11:18:35,017 [Worker-46: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-11-10 11:18:35,018 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 2 resources
+2022-11-10 11:18:35,152 [Worker-46: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-11-10 11:18:35,153 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 5 resources
+2022-11-10 11:18:35,155 [Worker-46: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-11-10 11:18:35,156 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-11-10 11:18:35,257 [Worker-46: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-11-10 11:18:35,258 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 4 resources
+2022-11-10 11:18:35,259 [Worker-46: Building] WARN  o.e.m.c.i.embedder.EclipseLogger - Using platform encoding (MS949 actually) to copy filtered resources, i.e. build is platform dependent!
+2022-11-10 11:18:35,260 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-11-10 11:18:55,181 [Worker-46: Building] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ssafy:vue:0.0.1-SNAPSHOT @ C:\Users\SSAFY\Desktop\유라배포파일\1110_배포\VueApi\pom.xml.
+2022-11-10 11:18:56,642 [Worker-46: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/commons/commons-pool2/2.11.1/commons-pool2-2.11.1.pom
+2022-11-10 11:18:56,802 [Worker-46: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/commons/commons-pool2/2.11.1/commons-pool2-2.11.1.pom
+2022-11-10 11:18:56,942 [Worker-46: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/json/json/20211205/json-20211205.pom
+2022-11-10 11:18:57,089 [Worker-46: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/json/json/20211205/json-20211205.pom
+2022-11-10 11:18:57,228 [Worker-46: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/springfox/springfox-swagger2/2.8.0/springfox-swagger2-2.8.0.pom
+2022-11-10 11:18:57,385 [Worker-46: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/springfox/springfox-swagger2/2.8.0/springfox-swagger2-2.8.0.pom
+2022-11-10 11:18:57,531 [Worker-46: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/swagger/swagger-annotations/1.5.14/swagger-annotations-1.5.14.pom
+2022-11-10 11:18:57,674 [Worker-46: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/swagger/swagger-annotations/1.5.14/swagger-annotations-1.5.14.pom
+2022-11-10 11:18:57,818 [Worker-46: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/swagger/swagger-project/1.5.14/swagger-project-1.5.14.pom
+2022-11-10 11:18:57,982 [Worker-46: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/swagger/swagger-project/1.5.14/swagger-project-1.5.14.pom
+2022-11-10 11:18:58,120 [Worker-46: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/swagger/swagger-models/1.5.14/swagger-models-1.5.14.pom
+2022-11-10 11:18:58,256 [Worker-46: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/swagger/swagger-models/1.5.14/swagger-models-1.5.14.pom
+2022-11-10 11:18:58,386 [Worker-46: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/springfox/springfox-spi/2.8.0/springfox-spi-2.8.0.pom
+2022-11-10 11:18:58,530 [Worker-46: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/springfox/springfox-spi/2.8.0/springfox-spi-2.8.0.pom
+2022-11-10 11:18:58,669 [Worker-46: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/springfox/springfox-core/2.8.0/springfox-core-2.8.0.pom
+2022-11-10 11:18:58,806 [Worker-46: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/springfox/springfox-core/2.8.0/springfox-core-2.8.0.pom
+2022-11-10 11:18:58,976 [Worker-46: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/springfox/springfox-schema/2.8.0/springfox-schema-2.8.0.pom
+2022-11-10 11:18:59,114 [Worker-46: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/springfox/springfox-schema/2.8.0/springfox-schema-2.8.0.pom
+2022-11-10 11:18:59,248 [Worker-46: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/springfox/springfox-swagger-common/2.8.0/springfox-swagger-common-2.8.0.pom
+2022-11-10 11:18:59,394 [Worker-46: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/springfox/springfox-swagger-common/2.8.0/springfox-swagger-common-2.8.0.pom
+2022-11-10 11:18:59,533 [Worker-46: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/springfox/springfox-spring-web/2.8.0/springfox-spring-web-2.8.0.pom
+2022-11-10 11:18:59,666 [Worker-46: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/springfox/springfox-spring-web/2.8.0/springfox-spring-web-2.8.0.pom
+2022-11-10 11:18:59,794 [Worker-46: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/reflections/reflections/0.9.11/reflections-0.9.11.pom
+2022-11-10 11:18:59,933 [Worker-46: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/reflections/reflections/0.9.11/reflections-0.9.11.pom
+2022-11-10 11:19:00,062 [Worker-46: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/javassist/javassist/3.21.0-GA/javassist-3.21.0-GA.pom
+2022-11-10 11:19:00,202 [Worker-46: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/javassist/javassist/3.21.0-GA/javassist-3.21.0-GA.pom
+2022-11-10 11:19:00,376 [Worker-46: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/springfox/springfox-swagger-ui/2.8.0/springfox-swagger-ui-2.8.0.pom
+2022-11-10 11:19:00,507 [Worker-46: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/springfox/springfox-swagger-ui/2.8.0/springfox-swagger-ui-2.8.0.pom
+2022-11-10 11:19:00,637 [Worker-46: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/google/guava/guava-base/r03/guava-base-r03.pom
+2022-11-10 11:19:00,771 [Worker-46: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/google/guava/guava-base/r03/guava-base-r03.pom
+2022-11-10 11:19:00,899 [Worker-46: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/google/guava/guava-parent/r03/guava-parent-r03.pom
+2022-11-10 11:19:01,033 [Worker-46: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/google/guava/guava-parent/r03/guava-parent-r03.pom
+2022-11-10 11:19:01,161 [Worker-46: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/google/google/5/google-5.pom
+2022-11-10 11:19:01,298 [Worker-46: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/google/google/5/google-5.pom
+2022-11-10 11:19:01,428 [Worker-46: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/google/guava/guava-annotations/r03/guava-annotations-r03.pom
+2022-11-10 11:19:01,592 [Worker-46: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/google/guava/guava-annotations/r03/guava-annotations-r03.pom
+2022-11-10 11:19:01,740 [Worker-46: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/google/guava/guava-collections/r03/guava-collections-r03.pom
+2022-11-10 11:19:01,881 [Worker-46: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/google/guava/guava-collections/r03/guava-collections-r03.pom
+2022-11-10 11:19:02,010 [Worker-46: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/google/guava/guava-primitives/r03/guava-primitives-r03.pom
+2022-11-10 11:19:02,147 [Worker-46: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/google/guava/guava-primitives/r03/guava-primitives-r03.pom
+2022-11-10 11:19:02,285 [Worker-46: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/jsonwebtoken/jjwt/0.9.1/jjwt-0.9.1.pom
+2022-11-10 11:19:02,446 [Worker-46: Building] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/jsonwebtoken/jjwt/0.9.1/jjwt-0.9.1.pom
+2022-11-10 11:19:02,648 [AetherRepositoryConnector-repo.maven.apache.org-0-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/swagger/swagger-models/1.5.14/swagger-models-1.5.14.jar
+2022-11-10 11:19:02,999 [AetherRepositoryConnector-repo.maven.apache.org-0-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/swagger/swagger-models/1.5.14/swagger-models-1.5.14.jar
+2022-11-10 11:19:03,027 [AetherRepositoryConnector-repo.maven.apache.org-0-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/swagger/swagger-annotations/1.5.14/swagger-annotations-1.5.14.jar
+2022-11-10 11:19:03,035 [AetherRepositoryConnector-repo.maven.apache.org-0-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/commons/commons-pool2/2.11.1/commons-pool2-2.11.1.jar
+2022-11-10 11:19:03,037 [AetherRepositoryConnector-repo.maven.apache.org-0-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/springfox/springfox-swagger2/2.8.0/springfox-swagger2-2.8.0.jar
+2022-11-10 11:19:03,038 [AetherRepositoryConnector-repo.maven.apache.org-0-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/json/json/20211205/json-20211205.jar
+2022-11-10 11:19:03,125 [AetherRepositoryConnector-repo.maven.apache.org-0-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/springfox/springfox-spi/2.8.0/springfox-spi-2.8.0.jar
+2022-11-10 11:19:03,176 [AetherRepositoryConnector-repo.maven.apache.org-0-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/swagger/swagger-annotations/1.5.14/swagger-annotations-1.5.14.jar
+2022-11-10 11:19:03,275 [AetherRepositoryConnector-repo.maven.apache.org-0-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/springfox/springfox-spi/2.8.0/springfox-spi-2.8.0.jar
+2022-11-10 11:19:03,300 [AetherRepositoryConnector-repo.maven.apache.org-0-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/springfox/springfox-core/2.8.0/springfox-core-2.8.0.jar
+2022-11-10 11:19:03,331 [AetherRepositoryConnector-repo.maven.apache.org-0-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/springfox/springfox-swagger2/2.8.0/springfox-swagger2-2.8.0.jar
+2022-11-10 11:19:03,331 [AetherRepositoryConnector-repo.maven.apache.org-0-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/json/json/20211205/json-20211205.jar
+2022-11-10 11:19:03,410 [AetherRepositoryConnector-repo.maven.apache.org-0-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/springfox/springfox-schema/2.8.0/springfox-schema-2.8.0.jar
+2022-11-10 11:19:03,461 [AetherRepositoryConnector-repo.maven.apache.org-0-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/commons/commons-pool2/2.11.1/commons-pool2-2.11.1.jar
+2022-11-10 11:19:03,464 [AetherRepositoryConnector-repo.maven.apache.org-0-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/springfox/springfox-swagger-common/2.8.0/springfox-swagger-common-2.8.0.jar
+2022-11-10 11:19:03,465 [AetherRepositoryConnector-repo.maven.apache.org-0-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/springfox/springfox-spring-web/2.8.0/springfox-spring-web-2.8.0.jar
+2022-11-10 11:19:03,571 [AetherRepositoryConnector-repo.maven.apache.org-0-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/springfox/springfox-schema/2.8.0/springfox-schema-2.8.0.jar
+2022-11-10 11:19:03,587 [AetherRepositoryConnector-repo.maven.apache.org-0-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/reflections/reflections/0.9.11/reflections-0.9.11.jar
+2022-11-10 11:19:03,619 [AetherRepositoryConnector-repo.maven.apache.org-0-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/springfox/springfox-core/2.8.0/springfox-core-2.8.0.jar
+2022-11-10 11:19:03,632 [AetherRepositoryConnector-repo.maven.apache.org-0-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/springfox/springfox-swagger-common/2.8.0/springfox-swagger-common-2.8.0.jar
+2022-11-10 11:19:03,695 [AetherRepositoryConnector-repo.maven.apache.org-0-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/javassist/javassist/3.21.0-GA/javassist-3.21.0-GA.jar
+2022-11-10 11:19:03,756 [AetherRepositoryConnector-repo.maven.apache.org-0-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/springfox/springfox-swagger-ui/2.8.0/springfox-swagger-ui-2.8.0.jar
+2022-11-10 11:19:03,759 [AetherRepositoryConnector-repo.maven.apache.org-0-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/google/guava/guava-base/r03/guava-base-r03.jar
+2022-11-10 11:19:03,780 [AetherRepositoryConnector-repo.maven.apache.org-0-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/springfox/springfox-spring-web/2.8.0/springfox-spring-web-2.8.0.jar
+2022-11-10 11:19:03,868 [AetherRepositoryConnector-repo.maven.apache.org-0-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/reflections/reflections/0.9.11/reflections-0.9.11.jar
+2022-11-10 11:19:03,907 [AetherRepositoryConnector-repo.maven.apache.org-0-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/google/guava/guava-annotations/r03/guava-annotations-r03.jar
+2022-11-10 11:19:03,928 [AetherRepositoryConnector-repo.maven.apache.org-0-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/google/guava/guava-base/r03/guava-base-r03.jar
+2022-11-10 11:19:04,006 [AetherRepositoryConnector-repo.maven.apache.org-0-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/google/guava/guava-collections/r03/guava-collections-r03.jar
+2022-11-10 11:19:04,042 [AetherRepositoryConnector-repo.maven.apache.org-0-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/google/guava/guava-annotations/r03/guava-annotations-r03.jar
+2022-11-10 11:19:04,054 [AetherRepositoryConnector-repo.maven.apache.org-0-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/google/guava/guava-primitives/r03/guava-primitives-r03.jar
+2022-11-10 11:19:04,169 [AetherRepositoryConnector-repo.maven.apache.org-0-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/jsonwebtoken/jjwt/0.9.1/jjwt-0.9.1.jar
+2022-11-10 11:19:04,210 [AetherRepositoryConnector-repo.maven.apache.org-0-2] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/google/guava/guava-primitives/r03/guava-primitives-r03.jar
+2022-11-10 11:19:04,217 [AetherRepositoryConnector-repo.maven.apache.org-0-4] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/javassist/javassist/3.21.0-GA/javassist-3.21.0-GA.jar
+2022-11-10 11:19:04,334 [AetherRepositoryConnector-repo.maven.apache.org-0-1] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/jsonwebtoken/jjwt/0.9.1/jjwt-0.9.1.jar
+2022-11-10 11:19:04,429 [AetherRepositoryConnector-repo.maven.apache.org-0-0] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/google/guava/guava-collections/r03/guava-collections-r03.jar
+2022-11-10 11:19:04,613 [AetherRepositoryConnector-repo.maven.apache.org-0-3] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/springfox/springfox-swagger-ui/2.8.0/springfox-swagger-ui-2.8.0.jar
+2022-11-10 11:19:04,723 [Worker-46: Building] WARN  o.e.a.i.i.DefaultRepositoryEventDispatcher - Failed to dispatch repository event to org.eclipse.m2e.core.internal.embedder.EclipseRepositoryListener: null
+2022-11-10 11:19:08,224 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-10 11:19:08,224 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-10 11:19:08,225 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-11-10 11:19:08,237 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2022-11-10 11:19:08,257 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-10 11:19:08,258 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-10 11:19:08,258 [Worker-46: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\SSAFY\Desktop\유라배포파일\1110_배포\VueApi\src\test\resources
+2022-11-10 11:19:08,624 [Worker-48: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/apache/commons/commons-pool2/2.11.1/commons-pool2-2.11.1-sources.jar
+2022-11-10 11:19:09,030 [Worker-49: Updating Maven Dependencies] INFO  o.e.m.c.i.l.LifecycleMappingFactory - Using org.eclipse.m2e.jdt.JarLifecycleMapping lifecycle mapping for MavenProject: com.ssafy:vue:0.0.1-SNAPSHOT @ C:\Users\SSAFY\Desktop\유라배포파일\1110_배포\VueApi\pom.xml.
+2022-11-10 11:19:09,039 [Worker-48: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/apache/commons/commons-pool2/2.11.1/commons-pool2-2.11.1-sources.jar
+2022-11-10 11:19:09,076 [Worker-48: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.apache.commons:commons-pool2:2.11.1
+2022-11-10 11:19:09,942 [Worker-48: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/json/json/20211205/json-20211205-sources.jar
+2022-11-10 11:19:10,265 [Worker-48: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/json/json/20211205/json-20211205-sources.jar
+2022-11-10 11:19:10,305 [Worker-48: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.json:json:20211205
+2022-11-10 11:19:10,588 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-10 11:19:10,588 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-10 11:19:10,592 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-11-10 11:19:10,602 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2022-11-10 11:19:10,619 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-10 11:19:10,619 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-10 11:19:10,619 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\SSAFY\Desktop\유라배포파일\1110_배포\VueApi\src\test\resources
+2022-11-10 11:19:10,946 [Worker-48: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/springfox/springfox-swagger2/2.8.0/springfox-swagger2-2.8.0-sources.jar
+2022-11-10 11:19:11,111 [Worker-48: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/springfox/springfox-swagger2/2.8.0/springfox-swagger2-2.8.0-sources.jar
+2022-11-10 11:19:11,167 [Worker-48: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for io.springfox:springfox-swagger2:2.8.0
+2022-11-10 11:19:11,697 [Worker-48: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/swagger/swagger-annotations/1.5.14/swagger-annotations-1.5.14-sources.jar
+2022-11-10 11:19:11,863 [Worker-48: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/swagger/swagger-annotations/1.5.14/swagger-annotations-1.5.14-sources.jar
+2022-11-10 11:19:11,901 [Worker-48: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for io.swagger:swagger-annotations:1.5.14
+2022-11-10 11:19:12,429 [Worker-48: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/swagger/swagger-models/1.5.14/swagger-models-1.5.14-sources.jar
+2022-11-10 11:19:12,714 [Worker-48: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/swagger/swagger-models/1.5.14/swagger-models-1.5.14-sources.jar
+2022-11-10 11:19:12,743 [Worker-48: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for io.swagger:swagger-models:1.5.14
+2022-11-10 11:19:13,250 [Worker-48: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/springfox/springfox-spi/2.8.0/springfox-spi-2.8.0-sources.jar
+2022-11-10 11:19:13,512 [Worker-48: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/springfox/springfox-spi/2.8.0/springfox-spi-2.8.0-sources.jar
+2022-11-10 11:19:13,541 [Worker-48: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for io.springfox:springfox-spi:2.8.0
+2022-11-10 11:19:14,072 [Worker-48: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/springfox/springfox-core/2.8.0/springfox-core-2.8.0-sources.jar
+2022-11-10 11:19:14,388 [Worker-48: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/springfox/springfox-core/2.8.0/springfox-core-2.8.0-sources.jar
+2022-11-10 11:19:14,418 [Worker-48: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for io.springfox:springfox-core:2.8.0
+2022-11-10 11:19:14,946 [Worker-48: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/springfox/springfox-schema/2.8.0/springfox-schema-2.8.0-sources.jar
+2022-11-10 11:19:15,214 [Worker-48: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/springfox/springfox-schema/2.8.0/springfox-schema-2.8.0-sources.jar
+2022-11-10 11:19:15,246 [Worker-48: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for io.springfox:springfox-schema:2.8.0
+2022-11-10 11:19:15,744 [Worker-48: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/springfox/springfox-swagger-common/2.8.0/springfox-swagger-common-2.8.0-sources.jar
+2022-11-10 11:19:16,012 [Worker-48: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/springfox/springfox-swagger-common/2.8.0/springfox-swagger-common-2.8.0-sources.jar
+2022-11-10 11:19:16,041 [Worker-48: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for io.springfox:springfox-swagger-common:2.8.0
+2022-11-10 11:19:16,550 [Worker-48: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/springfox/springfox-spring-web/2.8.0/springfox-spring-web-2.8.0-sources.jar
+2022-11-10 11:19:16,866 [Worker-48: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/springfox/springfox-spring-web/2.8.0/springfox-spring-web-2.8.0-sources.jar
+2022-11-10 11:19:16,896 [Worker-48: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for io.springfox:springfox-spring-web:2.8.0
+2022-11-10 11:19:17,394 [Worker-48: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/reflections/reflections/0.9.11/reflections-0.9.11-sources.jar
+2022-11-10 11:19:17,663 [Worker-48: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/reflections/reflections/0.9.11/reflections-0.9.11-sources.jar
+2022-11-10 11:19:17,694 [Worker-48: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.reflections:reflections:0.9.11
+2022-11-10 11:19:18,195 [Worker-48: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/org/javassist/javassist/3.21.0-GA/javassist-3.21.0-GA-sources.jar
+2022-11-10 11:19:18,774 [Worker-48: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/org/javassist/javassist/3.21.0-GA/javassist-3.21.0-GA-sources.jar
+2022-11-10 11:19:18,823 [Worker-48: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.javassist:javassist:3.21.0-GA
+2022-11-10 11:19:19,317 [Worker-48: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/springfox/springfox-swagger-ui/2.8.0/springfox-swagger-ui-2.8.0-sources.jar
+2022-11-10 11:19:19,446 [Worker-48: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/springfox/springfox-swagger-ui/2.8.0/springfox-swagger-ui-2.8.0-sources.jar
+2022-11-10 11:19:19,475 [Worker-48: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for io.springfox:springfox-swagger-ui:2.8.0
+2022-11-10 11:19:19,991 [Worker-48: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/google/guava/guava-base/r03/guava-base-r03-sources.jar
+2022-11-10 11:19:20,272 [Worker-48: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/google/guava/guava-base/r03/guava-base-r03-sources.jar
+2022-11-10 11:19:20,312 [Worker-48: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for com.google.guava:guava-base:r03
+2022-11-10 11:19:20,828 [Worker-48: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/google/guava/guava-annotations/r03/guava-annotations-r03-sources.jar
+2022-11-10 11:19:20,990 [Worker-48: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/google/guava/guava-annotations/r03/guava-annotations-r03-sources.jar
+2022-11-10 11:19:21,021 [Worker-48: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for com.google.guava:guava-annotations:r03
+2022-11-10 11:19:21,543 [Worker-48: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/google/guava/guava-collections/r03/guava-collections-r03-sources.jar
+2022-11-10 11:19:22,090 [Worker-48: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/google/guava/guava-collections/r03/guava-collections-r03-sources.jar
+2022-11-10 11:19:22,118 [Worker-48: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for com.google.guava:guava-collections:r03
+2022-11-10 11:19:22,634 [Worker-48: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/com/google/guava/guava-primitives/r03/guava-primitives-r03-sources.jar
+2022-11-10 11:19:22,904 [Worker-48: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/com/google/guava/guava-primitives/r03/guava-primitives-r03-sources.jar
+2022-11-10 11:19:22,931 [Worker-48: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for com.google.guava:guava-primitives:r03
+2022-11-10 11:19:23,438 [Worker-48: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloading https://repo.maven.apache.org/maven2/io/jsonwebtoken/jjwt/0.9.1/jjwt-0.9.1-sources.jar
+2022-11-10 11:19:23,768 [Worker-48: Download sources and javadoc] INFO  o.e.m.c.i.e.AbstractTransferListenerAdapter - Downloaded https://repo.maven.apache.org/maven2/io/jsonwebtoken/jjwt/0.9.1/jjwt-0.9.1-sources.jar
+2022-11-10 11:19:23,797 [Worker-48: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for io.jsonwebtoken:jjwt:0.9.1
+2022-11-10 11:19:23,799 [Worker-48: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.json:json:20211205
+2022-11-10 11:19:23,801 [Worker-48: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for io.springfox:springfox-swagger2:2.8.0
+2022-11-10 11:19:23,803 [Worker-48: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for io.swagger:swagger-annotations:1.5.14
+2022-11-10 11:19:23,804 [Worker-48: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for io.swagger:swagger-models:1.5.14
+2022-11-10 11:19:23,806 [Worker-48: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for io.springfox:springfox-spi:2.8.0
+2022-11-10 11:19:23,808 [Worker-48: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for io.springfox:springfox-core:2.8.0
+2022-11-10 11:19:23,809 [Worker-48: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for io.springfox:springfox-schema:2.8.0
+2022-11-10 11:19:23,811 [Worker-48: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for io.springfox:springfox-swagger-common:2.8.0
+2022-11-10 11:19:23,813 [Worker-48: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for io.springfox:springfox-spring-web:2.8.0
+2022-11-10 11:19:23,814 [Worker-48: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.reflections:reflections:0.9.11
+2022-11-10 11:19:23,816 [Worker-48: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for org.javassist:javassist:3.21.0-GA
+2022-11-10 11:19:23,818 [Worker-48: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for io.springfox:springfox-swagger-ui:2.8.0
+2022-11-10 11:19:23,820 [Worker-48: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for com.google.guava:guava-base:r03
+2022-11-10 11:19:23,822 [Worker-48: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for com.google.guava:guava-annotations:r03
+2022-11-10 11:19:23,824 [Worker-48: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for com.google.guava:guava-collections:r03
+2022-11-10 11:19:23,826 [Worker-48: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for com.google.guava:guava-primitives:r03
+2022-11-10 11:19:23,828 [Worker-48: Download sources and javadoc] INFO  o.e.m.j.internal.DownloadSourcesJob - Downloaded sources for io.jsonwebtoken:jjwt:0.9.1
+2022-11-10 11:19:24,201 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-10 11:19:24,201 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-10 11:19:24,201 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-11-10 11:19:24,201 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-11-10 11:19:24,202 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-10 11:19:24,202 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-10 11:19:24,202 [Worker-44: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\SSAFY\Desktop\유라배포파일\1110_배포\VueApi\src\test\resources
+2022-11-10 11:36:46,587 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-10 11:36:46,587 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-10 11:36:46,588 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-11-10 11:36:46,593 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 0 resource
+2022-11-10 11:36:46,595 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-10 11:36:46,595 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-10 11:36:46,595 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\SSAFY\Desktop\유라배포파일\1110_배포\VueApi\src\test\resources
+2022-11-10 11:37:32,006 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-10 11:37:32,006 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-10 11:37:32,007 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 1 resource
+2022-11-10 11:37:32,012 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Copying 6 resources
+2022-11-10 11:37:32,014 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered resources.
+2022-11-10 11:37:32,014 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - Using 'UTF-8' encoding to copy filtered properties files.
+2022-11-10 11:37:32,014 [Worker-54: Building] INFO  o.e.m.c.i.embedder.EclipseLogger - skip non existing resourceDirectory C:\Users\SSAFY\Desktop\유라배포파일\1110_배포\VueApi\src\test\resources
